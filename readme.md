@@ -53,7 +53,6 @@ This list focuses on what's working *now*, prioritizing tools and platforms with
 
 ### 🚀 Recommended Token Launch Platforms
 
-![Image](https://github.com/user-attachments/assets/bab5e181-c88a-435f-a1e2-814219092282)
 
 #### 🔥 If you're launching an **IC-only Meme Token**:
 Best platforms to go viral and get launched quickly:
@@ -94,6 +93,14 @@ This dapp allows you to manage ICP, stake neurons, participate in voting, and ea
 
 ---
 
+
+#### ⚡ If you're building an **ICTO launchpad** (IC-powered):
+This 
+
+- **[Launchpad](https://icto.app/launchpad)**  
+  - Streamline token vesting,payroll and fundraising on the Internet Computer Blockchain.
+
+---
 
 #### 👾 If you're launching an **IC Agent Token** (DeFi, Utility, Governance):
 
