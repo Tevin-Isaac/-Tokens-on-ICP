@@ -1,137 +1,175 @@
 
-## Tokens
-On ICP, the DeFi ecosystem includes three types of assets:
+## 🪙 Tokens on ICP
 
-- ICP token: The network’s native utility token.
+The DeFi ecosystem on the Internet Computer (ICP) includes three main asset types:
 
-- Cycles: The equivalent of “gas” on ICP.
-
-- ICRC tokens: Tokens that adhere to a set of ICRC standards used for defining fungible and non-fungible tokens.
-
-### 🟡 Token Standards
-
-The Internet Computer supports token standards under the **ICRC (Internet Computer Request for Comments)** initiative.
-
-- **ICRC-1**: Fungible token base standard (similar to ERC-20)
-- **ICRC-2**: Adds approvals for delegated transfers
-- **ICRC-7**: NFT standard for non-fungible tokens
-- **ICRC-37**: The ICRC-37 standard is an extension of ICRC-7 that provides additional functionality for an approval workflow.
-
-> Most token launch platforms currently adopt **ICRC-1** as the base fungible token standard.
-
-
-## ICRC1
-ICRC-1
-The ICRC-1 standard is for fungible tokens on ICP. It is considered the 'base' standard and intentionally excludes certain features and functions, such as:
-
-* Reliable transaction notifications for smart contracts.
-
-* A block structure and the interface for fetching blocks.
-
-* Pre-signed transactions.
-
-ICRC-1 supports extensions of this standard to implement these missing functions, and the icrc1_supported_standards endpoint can be queried to return the name of all supported extensions.
-
-Example ICRC-1 tokens on ICP include:
-
- **[ICX](https://icpex.org/token/detail/lvfsa-2aaaa-aaaaq-aaeyq-cai)**  
-
-
-View an example dapp for ICRC-1 transfers.(https://github.com/dfinity/ICRC-1/tree/main/standards/ICRC-1)
-Check the full ICRC1 token standard here(https://github.com/dfinity/examples/tree/master/motoko/token_transfer)
-
-Learn more here (https://internetcomputer.org/docs/defi/token-standards/)
-
-
-## 🧠 ICP Token Launch Platforms
-
-Welcome to this curated list of **active and relevant token launch platforms** on the Internet Computer (ICP), specifically designed to help developers, meme lords, DeFi explorers, and Web3 founders launch tokens with clarity and purpose.
-
-This list focuses on what's working *now*, prioritizing tools and platforms with real usage, volume, or traction. Dead projects, broken launchers, and non-maintained repos have been excluded intentionally.
-
-
-
-### 🚀 Recommended Token Launch Platforms
-
-
-#### 🔥 If you're launching an **IC-only Meme Token**:
-Best platforms to go viral and get launched quickly:
-
-1. **[bob.fun](https://bob.fun/)**  
-   - Easiest meme-token launcher
-   - User-friendly interface
-   - Focused on the community/token virality
-  
-2. **[ICPex](https://icpex.org/)**  
-   - Good meme-token traction
-   - Offers launching and swapping
-   - Early-stage token marketplace included
-
-
-3. **[Fomowell](https://fomowell.com/board)**  
-   - Issue low-cost meme coins with AI intergration and on-chain content management via ICP.
-
-4. **[Pacapump](https://pacapump.io/)**  
-   - Launch manage and trade tokens on IC.
+* **ICP token**: The network’s native utility token.
+* **Cycles**: The equivalent of “gas” on ICP.
+* **ICRC tokens**: Tokens that follow ICRC standards (fungible + non-fungible).
 
 ---
 
-#### ⚡ If you're building a **Bitcoin-style Meme Token** (IC-powered):
-Use this if you want to experiment with NFT Ordinals or hybrid tokens:
+## 🟡 Token Standards
 
-- **[Odin Fun](https://odin.fun/)**  
-  - Runes + IC-powered innovation  
-  - Meme-token vibes with NFT-style data inscription
+The Internet Computer uses **ICRC (Internet Computer Request for Comments)** token standards.
 
----
+| Standard | Type         | Description                                     | Similar To       |
+| -------- | ------------ | ----------------------------------------------- | ---------------- |
+| ICRC-1   | Fungible     | Base fungible token (transfer, balanceOf)       | ERC-20           |
+| ICRC-2   | Fungible     | Adds delegated transfers (approve/transferFrom) | ERC-20 + approve |
+| ICRC-7   | Non-Fungible | NFT standard on ICP                             | ERC-721          |
+| ICRC-37  | Non-Fungible | Extends ICRC-7 with approval workflows          | ERC-1155 vibes   |
 
-#### ⚡ If you're building a **DAO** (IC-powered):
-This dapp allows you to manage ICP, stake neurons, participate in voting, and earn governance rewards.:
-
-- **[NNS](https://nns.ic0.app/)**  
-  - Launch SNS DAOs to transform dapps into community-owned ecosystems with built in governance tokens
+> Most token launch platforms use **ICRC-1** as the default for fungible tokens.
 
 ---
 
+## 💠 ICRC-1 Token Standard
 
-#### ⚡ If you're building an **ICTO launchpad** (IC-powered):
-This 
+**ICRC-1** is the base standard for fungible tokens on ICP. It intentionally excludes certain features, such as:
 
-- **[Launchpad](https://icto.app/launchpad)**  
-  - Streamline token vesting,payroll and fundraising on the Internet Computer Blockchain.
+* Smart contract transaction notifications
+* Pre-signed transactions
+* Block structures or fetchable transaction blocks
 
----
+ICRC-1 is designed to be lightweight and extendable. The `icrc1_supported_standards` endpoint can be queried to find additional extensions supported by a token.
 
-#### 👾 If you're launching an **IC Agent Token** (DeFi, Utility, Governance):
+### 🔍 Example ICRC-1 Tokens:
 
-- **[Elna](https://www.elna.ai/)**  
-  - ELNA.ai is the world's first fully onchain decentralized GenAI Companion.
- 
-
----
-
-### 🛠️ Under Active Development (Worth Watching)
-
-- **[IC Toolkit](https://ic-toolkit.app/browse)**  
-  - Incubated by PT/FR Hub  
-  - Meant for broader use cases (NFTs, dapps, tokens)
+| Token                                                               | Description                      | Link    |
+| ------------------------------------------------------------------- | -------------------------------- | ------- |
+| [ICX](https://icpex.org/token/detail/lvfsa-2aaaa-aaaaq-aaeyq-cai)   | A standard ICRC-1 fungible token | ICPSwap |
+| [HOT](https://icpex.org/token/detail/rrkah-fqaaa-aaaaa-aaaaq-cai)   | ICRC-1 token                     | ICPSwap |
+| [PANDA](https://icpex.org/token/detail/bv6fl-sqaaa-aaaaq-aae3a-cai) | ICRC-1 token                     | ICPSwap |
 
 ---
 
-### ✍️ Want to Create Your Own Token?
+### 💻 Code Examples for ICRC-1 Transfers
 
-You can also directly create and deploy **ICRC-1 tokens** using tools like:
-- `dfx` with Motoko/Rust boilerplates
-- SDKs like `ic-js`, `ickit`, or `Azle` (TypeScript)
-- Using Ledger canister.Learn how to do that here(https://github.com/ICP-Hub-Kenya/icp-token-creation)
+#### ✅ Motoko Example (Transfer)
+
+```motoko
+let transferArgs = {
+  from_subaccount = null;
+  to = recipientPrincipal;
+  amount = 1000000;
+  fee = null;
+  memo = null;
+  created_at_time = null;
+};
+let result = await tokenActor.icrc1_transfer(transferArgs);
+```
+
+#### ✅ Rust Example (Transfer)
+
+```rust
+let args = TransferArg {
+    from_subaccount: None,
+    to: recipient_principal,
+    amount: 1_000_000,
+    fee: None,
+    memo: None,
+    created_at_time: None,
+};
+let result = token_canister.icrc1_transfer(args).await?;
+```
+
+🔗 View [ICRC-1 Methods Documentation](https://github.com/dfinity/ICRC-1/tree/main/standards/ICRC-1)
 
 ---
 
-### 💡 Final Notes
+## 🚀 Recommended Token Launch Platforms
 
-- Stay away from launchpads without volume or support
-- Focus on community traction + technical reliability
+A curated list of **actively maintained token launchers** on ICP—great for developers, meme lords, and builders.
 
+### 🔥 Meme Token Launchers
+
+1. **[launch.bob.fun](https://launch.bob.fun/)**
+
+   * Dead simple meme-token launcher
+   * Community-focused
+
+2. **[icpex.org/createToken](https://icpex.org/createToken)**
+
+   * Launch & swap tokens
+   * Good traction for early tokens
+
+3. **[Fomowell](https://fomowell.com/board)**
+
+   * Low-cost meme coins
+   * AI + content on-chain
+
+4. **[Pacapump](https://pacapump.io/)**
+
+   * Launch, manage, and trade IC tokens
 
 ---
 
+### 💣 Bitcoin-style Tokens / NFT Ordinals
+
+* **[Odin Fun](https://odin.fun/)**
+
+  * Hybrid between meme tokens & NFT inscriptions
+
+---
+
+### 🏛 DAO Launchers
+
+* **[nns.ic0.app/launchpad](https://nns.ic0.app/launchpad)**
+
+  * Launch SNS DAOs with built-in governance
+
+---
+
+### 💼 Token Launchpads / Fundraising
+
+* **[Launchpad on ICTO](https://icto.app/launchpad)**
+
+  * Streamline vesting, payroll, and token launches
+
+* **[icptokens.com](https://icptokens.com/)**
+
+  * Directory of available launchpads on ICP
+
+---
+
+### 🤖 Utility / AI Tokens
+
+* **[Elna](https://www.elna.ai/)**
+
+  * First on-chain AI companion dapp
+
+---
+
+### 🛠 Under Active Development
+
+* **[IC Toolkit](https://ic-toolkit.app/browse)**
+
+  * Multi-tool for NFTs, dapps, and token deployment
+
+---
+
+## ✍️ Want to Create Your Own Token?
+
+You can directly create and deploy **ICRC-1 tokens** using:
+
+* `dfx` CLI with Motoko or Rust
+* SDKs like `ic-js`, `ickit`, or `Azle` (TypeScript)
+* The ledger canister
+
+
+
+📘 Follow the official DFINITY guide:
+👉 [Deploying an ICRC-1 Ledger Locally](https://internetcomputer.org/docs/defi/create/#deploy-the-ledger-locally)
+
+📕 Also check out the [tutorial by ICP Hub Kenya on ICP token creation](https://github.com/ICP-Hub-Kenya/icp-token-creation)
+
+---
+
+## ✅ Final Notes
+
+* Focus on **traction** + **community support**
+* Avoid abandoned or unmaintained platforms
+* Choose the right standard (ICRC-1 or ICRC-7) based on your use case
+
+---
