@@ -1,3 +1,8 @@
+
+![Image](https://github.com/user-attachments/assets/ecfb80ef-3c86-461e-b9d1-47a170f8a72c)
+
+
+
 # Table of Contents
 
 - [🪙 Tokens on ICP](#-tokens-on-icp)
@@ -20,7 +25,7 @@
 - [✅ Final Notes](#-final-notes)
 
 ## 🪙 Tokens on ICP
-![Image](https://github.com/user-attachments/assets/ecfb80ef-3c86-461e-b9d1-47a170f8a72c)
+
 
 The DeFi ecosystem on the Internet Computer (ICP) includes three main asset types:
 
