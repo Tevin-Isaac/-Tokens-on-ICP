@@ -31,9 +31,6 @@ The DeFi ecosystem on the Internet Computer (ICP) includes three main asset type
 ---
 
 ### 💼 Token Use Cases & Utility Examples
-
-**Break down where and how tokens can be used:**
-
 * **Governance** (e.g. SNS DAO voting power)
 * **Rewards** (community, staking, quests)
 * **Payments** (buying digital goods/services)
