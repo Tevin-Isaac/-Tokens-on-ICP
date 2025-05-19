@@ -203,12 +203,9 @@ A curated list of **actively maintained token launchers** on ICP—great for dev
   * [ICP Swap](https://info.icpswap.com/)
 
 ## ✍️ Want to Create Your Own Token?
-
-You can directly create and deploy **ICRC-1 tokens** using:
-
-* `dfx` CLI with Motoko or Rust
-* SDKs like `ic-js`, `ickit`, or `Azle` (TypeScript)
-* The ledger canister
+Check out this documentation:
+-  [how to deploy an ICRC-1 token ledger locally](https://internetcomputer.org/docs/tutorials/developer-liftoff/level-4/4.2-icrc-tokens)
+-  [ICP token creation](https://github.com/ICP-Hub-Kenya/icp-token-creation).
 
 ### 🧑‍🎓 Bonus Learning Resources
 Learn more how to build on ICP here
